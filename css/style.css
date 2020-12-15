@@ -181,3 +181,23 @@ span {
   height: 338.8px;
   margin: 25% 25%;
 }
+
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 299px;
+    height: 288.8px;
+    margin: 100% 9%;
+  }
+
+  .left {
+    width: 45%;
+  }
+
+  .right {
+    width: 55%;
+  }
+
+  .wheel {
+    margin: 75% 0;
+  }
+}
