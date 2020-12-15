@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  overflow: hidden !important;
+  font-family: "Lalezar", cursive;
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ffffff,
+    #f5c513
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ffffff,
+    #f5c513
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.wheel {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 20.7% 0;
+}
+
+.sa {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  border: 8px solid rgb(170, 170, 170);
+  overflow: hidden;
+  transition: all ease 5s;
+}
+span {
+  width: 70%;
+  height: 70%;
+  display: inline-block;
+  position: absolute;
+}
+.spa {
+  clip-path: polygon(71.5% 50%, 0px 100%, 0px 0px);
+  background-color: #f5c513;
+  top: 60px;
+  left: 0;
+}
+.spd {
+  clip-path: polygon(50% 71%, 0px 0px, 100% 0px);
+  background-color: rgb(245, 197, 19);
+  top: 0px;
+  left: 58px;
+}
+
+.spb {
+  clip-path: polygon(50% 71.5%, 0px 0px, 85% 0px);
+  background-color: rgb(245, 197, 19);
+  top: 80px;
+  right: 111px;
+  transform: rotate(-115deg);
+}
+
+.sa2 {
+  height: 100%;
+  width: 100%;
+  transform: rotate(-150deg);
+}
+
+.sa3 {
+  height: 100%;
+  width: 100%;
+}
+
+.paragraph {
+  color: black;
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+}
+
+.p1 {
+  top: 20%;
+  left: 37%;
+  transform: rotate(270deg);
+}
+.p2 {
+  top: 35%;
+  left: 60%;
+  transform: rotate(329deg);
+}
+.p3 {
+  top: 58%;
+  left: 50%;
+  transform: rotate(35deg);
+}
+.p4 {
+  top: 66%;
+  left: 43%;
+  transform: rotate(90deg);
+}
+.p5 {
+  top: 56%;
+  left: 18%;
+  transform: rotate(155deg);
+}
+.p6 {
+  top: 32%;
+  left: 6%;
+  transform: rotate(207deg);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(170, 170, 170);
+}
+
+.triangle {
+  top: 45.8%;
+  left: 50%;
+  clip-path: polygon(50% 0, 0% 60%, 100% 60%);
+  width: 30px;
+  height: 30px;
+  background-color: rgb(170, 170, 170);
+}
+
+.rotatewheel {
+  width: 90px;
+  height: 80px;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+}
+
+.starker-word {
+  width: 70px;
+  height: 25px;
+}
+
+.starker-word:active {
+  width: 90px;
+  height: 30px;
+}
+
+.logo {
+  width: 341px;
+  height: 338.8px;
+  margin: 25% 25%;
+}

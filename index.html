@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
+      rel="stylesheet"
+    />
+    <title>عجلة الحظ - ستاركر</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="right">
+        <div class="wheel">
+          <div class="sa" id="sa">
+            <div class="sa1">
+              <span class="spd"></span>
+            </div>
+            <div class="sa2">
+              <span class="spa"></span>
+            </div>
+            <div class="sa3">
+              <span class="spb"></span>
+            </div>
+            <p class="paragraph p1">كفر حماية هدية</p>
+            <p class="paragraph p2">ادفع 5 ريال</p>
+            <p class="paragraph p3">خصم 10% على جميع المنتجات</p>
+            <p class="paragraph p4">حظ اوفر</p>
+            <p class="paragraph p5">ستيكر هدية</p>
+            <p class="paragraph p6">يالله خذلك لفه ثانية</p>
+          </div>
+          <div class="arrow-of-wheel">
+            <span class="center circle"></span>
+            <span class="center triangle"></span>
+            <button class="center rotatewheel" onclick="magicWheel()">
+              <img
+                class="starker-word"
+                loading="lazy"
+                src="images/Starker-Logo-Ai-y-ستاركر.png"
+                alt="starker"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="left">
+        <img
+          class="logo"
+          src="images/Starker-Logo-Ai-No-white.png"
+          alt="logo"
+        />
+      </div>
+    </div>
+  </body>
+  <script>
+    function magicWheel() {
+      const x = 1024;
+      const y = 9999;
+      const dgre = Math.floor(Math.random() * (x - y)) + y;
+      if (dgre > 5000) {
+        dgre * (y - 5000);
+      } else {
+        dgre * (x + 5000);
+      }
+      document.getElementById("sa").style.transform = "rotate(" + dgre + "deg)";
+    }
+  </script>
+</html>
